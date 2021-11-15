@@ -7,7 +7,7 @@ setTimeout(function() {
 window.sr = ScrollReveal(); {
     
     sr.reveal('#slider-text', {
-        duration: 1000,
+        duration: 3000,
         origin: 'bottom',
         distance: '300px'
     });
