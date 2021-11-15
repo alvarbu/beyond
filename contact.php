@@ -7,7 +7,8 @@ $phone = $_POST['phone'];
 $date = $_POST['date'];
 $time = $_POST['time'];
 $inlineRadioOptions = $_POST['inlineRadioOptions'];
-$secret = "6LccFzgdAAAAAO_4-QGU5xcwEMBBn0O5Bu7_DY_W";
+/* $secret = "6LccFzgdAAAAAO_4-QGU5xcwEMBBn0O5Bu7_DY_W"; */
+$secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
 $response = null;
 $datetime = strtotime($date);
 
@@ -92,7 +93,7 @@ padding-right: 5% !important;
 /* ANDROID CENTER FIX */
 div[style*="margin: 16px 0;"] { margin: 0 !important; }
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
 
