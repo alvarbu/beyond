@@ -92,6 +92,7 @@ padding-right: 5% !important;
 /* ANDROID CENTER FIX */
 div[style*="margin: 16px 0;"] { margin: 0 !important; }
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
 
@@ -220,7 +221,7 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
 </html>';
 
     mail($to, $subject, $message, $headers);
-    header('Location: index.html');
+    header('Location: typ.html');
 } else {
     echo "Algo paso";
 }
