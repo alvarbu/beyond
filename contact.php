@@ -110,7 +110,7 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
 <tr>
 <td align="center" valign="top" style="padding: 0 0 20px 0;">
-<img src="	https://beyond.testvandu.com/img/beyond-yucatan-logo.svg" width="250" height="50" border="0" style="display: block;">
+<img src="https://beyond.testvandu.com/img/beyond-yucatan-logo.svg" width="250" height="50" border="0" style="display: block;">
 </td>
 </tr>
 <tr>
