@@ -8,6 +8,7 @@
     <script src="/js/scrollreveal.js"></script>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <nav class="fixed-top bg-nav">
@@ -17,11 +18,41 @@
             </li>
         </ul>
     </nav>
-   
-    <section>
-        <div class="bg-chichen">
-            <img src="/img/header/2.png" class="objeto" data-value="-2" alt="">
-            <img src="/img/header/3.png" class="objeto" data-value="-6" alt="">
+    
+    <section id="slider">
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+            <div id="arboles" class="bg-chichen image-slider rellax" data-rellax-speed="-10" style="background-image: url(/img/header/2.png);">
+            </div>
+            <div class="image-slider rellax" data-rellax-speed="-10" style="background-image: url(/img/header/cielo.png); z-index: -1;">
+            </div>
+            <div class="text-slider rellax" data-rellax-speed="-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 id="slider-text">IT'S ALL <br class="d-block d-sm-block d-md-none d-lg-none"> ABOUT YOU
+                                <br>
+                                <span class="enjoy">Enjoy the pleasure of fascinating experiencies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chichen d-block d-sm-block d-md-none d-lg-none">
+            <div id="content-images">
+                <div class="image-slider rellax" data-rellax-speed="-4"
+                    style="background-image: url(/img/header/Chichen-2.png);"></div>
+                <div class="text-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 id="slider-text">IT'S ALL <br class="d-block d-sm-block d-md-none d-lg-none"> ABOUT
+                                    YOU <br>
+                                    <span class="enjoy">Enjoy the pleasure of fascinating experiencies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -99,6 +130,17 @@
         </div>
         
     </section>
+    <footer class="text-center m-0 row justify-content-center align-items-center">
+        <div class="container">
+            <div class="pt-4 pb-4">
+                <img src="/img/beyond-yucatan-logo.svg" width="200" alt="">
+            </div>
+            <!--<div class="pt-2 d-flex justify-content-center align-items-center">
+                <i class="fas fa-phone-alt text-white px-2"></i><a href="tel:529994425050" style="text-decoration: none; color: #fff;">Phone: +52 (999) 442 5050</a>
+            </div>-->
+            
+        </div>
+    </footer>
     
     <!--<script src="/js/animacion.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -110,6 +152,18 @@
         $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
         });
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $('.bg-chichen').mousemove(function(e){
+            var moveX = (e.pageX * 0/20 );
+            var moveY = (e.pageY * -1/20 );
+            $(this).css('background-position', moveX + 'px ' + moveY + 'px ')
+        })
     </script>
     
 </body>

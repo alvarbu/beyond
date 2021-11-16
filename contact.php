@@ -38,8 +38,8 @@ switch ($inlineRadioOptions) {
 }
 
 if ($response != null && $response->success) {
-    $to = "ripmarenko@gmail.com";
-    $subject = "Nuevo Lead";
+    $to = "cecilia@beyondyucatan.travel";
+    $subject = "¡Nuevo Lead de Beyond Yucatan!";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
@@ -224,5 +224,5 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
     mail($to, $subject, $message, $headers);
     header('Location: typ.html');
 } else {
-    echo "Algo paso";
+    echo "Algo pasó";
 }

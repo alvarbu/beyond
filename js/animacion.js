@@ -14,3 +14,12 @@ window.sr = ScrollReveal(); {
 
 };
 
+window.sr = ScrollReveal(); {
+    
+    sr.reveal('#arboles', {
+        duration: 3300,
+    });
+
+};
+
+
