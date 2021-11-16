@@ -7,8 +7,8 @@ $phone = $_POST['phone'];
 $date = $_POST['date'];
 $time = $_POST['time'];
 $inlineRadioOptions = $_POST['inlineRadioOptions'];
-/* $secret = "6LccFzgdAAAAAO_4-QGU5xcwEMBBn0O5Bu7_DY_W"; */
-$secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+$secret = "6LccFzgdAAAAAO_4-QGU5xcwEMBBn0O5Bu7_DY_W";
+/* $secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"; */
 $response = null;
 $datetime = strtotime($date);
 
