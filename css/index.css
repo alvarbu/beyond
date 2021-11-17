@@ -14,13 +14,14 @@
     font-family: 'SuisseIntl-Regular';
     src: url(/fonts/suisse-int/SuisseIntl-Regular.otf);
 }
+  
 .content-p {
     position: absolute;
     background: rgb(0, 0, 0);
     width: 100%;
     min-height: 100vh;
     display: flex;
-    z-index: 10000;
+    z-index: 10000000;
 }
 
 .preloader {
@@ -30,9 +31,14 @@
     animation: preloader 2s;
 }
 .cerrar {
-    transform: var(fade-out);
-    transition: ease-out all .8s;
+    transform: var(fade-in);
+    transition: ease-in all 1.8s;
 }
+
+.cerrar2 {
+    display: none;
+}
+
 @keyframes preloader {
     0% {
         width: 120px;
@@ -183,6 +189,16 @@
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
+     padding-bottom: 20px;
+ }
+
+ .hacienda {
+     background-image: url(/img/Temozon-hacienda.png);
+     background-size: cover;
+     min-height: 620px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
 
  .contact {
